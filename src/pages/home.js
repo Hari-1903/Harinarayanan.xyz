@@ -51,7 +51,7 @@ const home= () =>{
                 </div>
             </div>
             <div class="h_about-stats">
-                <h4 class="h_stat-title">My Skills</h4>
+                <h4 class="h_stat-title">What I can do?</h4>
                 <div class="progress-bars">
                 {Skills_data.map((skdata) =>( 
                     <div class="progress-bar">
@@ -66,7 +66,7 @@ const home= () =>{
                 ))}
                 </div>
             </div>
-            <h4 class="h_stat-title">My Timeline</h4>
+            <h4 class="h_stat-title">Survial History</h4>
             <div class="h_timeline">
                 {timeline_data.map((tdata) =>(
                  <div class="timeline-item">

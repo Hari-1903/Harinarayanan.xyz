@@ -1,0 +1,57 @@
+.projects{
+    margin-top: 6rem;
+}
+
+.project-item{
+    background-color: var(--btn_line);
+    display: flex;
+    border-radius: 8px; 
+    margin-bottom: 5rem;  
+}
+
+.project-image{
+    height: 14rem;
+    transform: scale(1.2);
+    border-radius: 8px;   
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.lpi{
+    margin-right: 4rem ;
+}
+
+.project-item:hover{
+    transform: scale(1.05);
+    transition: all 0.4s ease;
+}
+
+.project-logo{
+    width: 3rem;
+    height: auto;
+}
+
+.project-heading{
+    display: flex;
+    align-items: center;
+}
+
+.project-heading p{
+    padding-left: .5rem;
+}
+
+.project-text{
+    padding-top: 1rem;
+}
+
+.project-text span{
+    color: #F0DB4F;
+}
+
+.projects a{
+    text-decoration: none;
+    color: var(--light3);
+}
+
+.rpc{
+    margin: 0 4rem 0 2rem;
+}

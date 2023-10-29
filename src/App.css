@@ -123,6 +123,7 @@ html::-webkit-scrollbar-thumb:hover {
   padding: 4rem 26rem;
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
+  background-color: var(--bg_color);
   color: var(--white);
 }
 
@@ -139,4 +140,19 @@ html::-webkit-scrollbar-thumb:hover {
 
 .main-title h2 span {
   color: var(--medium2);
+}
+
+
+@media screen and (max-width:1350px){
+  .-container {
+      padding: 4rem 20rem;
+      font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .container{
+      padding: 4rem 12rem;
+      font-size: 1.6rem;
+  }
 }
