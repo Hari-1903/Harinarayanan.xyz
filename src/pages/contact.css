@@ -1,0 +1,113 @@
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    padding-top: 4rem;
+    gap: 2rem;
+}
+
+.left-contact{
+    margin-top: 2rem;
+}
+
+.left-contact p {
+    line-height: 3.2rem;
+}
+
+.contact-content .contact-item p {
+    padding: 0 1rem ;
+    display: inline-block;
+}
+
+.contact-content .contact-item{
+    margin-top: 2rem;
+}
+
+.icon{
+    justify-content: flex-start;
+}
+
+.icon ion-icon{
+    font-size:3rem ;
+}
+
+.contact-item a:link,
+.contact-item a:hover,
+.contact-item a:visited,
+.contact-item a:active{
+    color: var(--light3);
+    padding-left: 1rem;
+}
+
+.contact-content .right-contact{
+    margin-left: 3rem;
+}
+
+.contact-content .right-contact .input-control {
+    margin: 2.5rem 0;
+}
+
+.contact-content .right-contact .input-control input, .contact-content .right-contact .input-control textarea {
+    border-radius: 30px;
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.8rem 1.1rem;
+    outline: none;
+    border: none;
+    background-color: var(--btn_line);
+    width: 100%;
+    color: var(--light3);
+    resize: none;
+}
+
+.submit-btn btn{
+    color: var(--white);
+    border: 2px solid var(--light1);
+    border-radius: 10px;
+    padding: .5rem 5rem;
+}
+
+.submit-btn btn:hover{
+    background-color: var(--light1);
+    color: var(--bg_color);
+    transform: scale(0.99);
+    transition: all 0.75s smooth;
+}
+
+.contact-content .right-contact .field{
+    display: flex;
+}
+.contact-content .right-contact .field :last-child {
+    margin-left: 1.5rem;
+}
+
+.profile-card-social{
+    display: flex;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+  
+.logo {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 2.8rem;
+}
+
+.logo.telegram {
+    background: linear-gradient(45deg, #0088cc, #00aced);
+    box-shadow: 0px 4px 30px rgba(19, 127, 212, 0.4);
+}
+.logo.instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    box-shadow: 0px 4px 30px rgba(120, 64, 190, 0.4);
+}
+.logo.github {
+    background: linear-gradient(45deg, #333333, #626b73);
+    box-shadow: 0px 4px 30px rgba(27, 31, 34, 0.4);
+}
+.logo.discord {
+    background: linear-gradient(45deg, #7289da, #5865f2);
+    box-shadow: 0px 4px 30px rgba(88, 101, 242, 0.4);
+}

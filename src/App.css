@@ -90,8 +90,10 @@ a, a:hover{
   margin: 1.2rem 0;
 }
 
-.active_icon{
+.nav_button:hover{
   background-color: var(--light1);
+  transform: scale(1.1);
+  transition: all 0.5s ease;
 }
 
 html::-webkit-scrollbar {
@@ -112,4 +114,29 @@ html::-webkit-scrollbar-thumb:hover {
   height: 100vh;
   font-size: 8rem;
   color: white;
+}
+
+
+/* Common Properties */
+
+.container {  
+  padding: 4rem 26rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.main-title {
+  text-align: center;
+}
+
+.main-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.main-title h2 span {
+  color: var(--medium2);
 }

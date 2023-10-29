@@ -5,7 +5,7 @@ import my_potrait from '../assests/Harinarayanan.jpg'
 
 const timeline_data=[
     {title:"Computer Science Engineering (AIML)",place:"-SRM University",year:"2021 - Present",description:"Coursework of significance includes AIML, DSA, OOPS, and Computer Organization and Architecture. 9.34 curent CGPA"},
-    {title:"Senior Secondary School CBSE",place:"Kaathir Vidyaa Mandhir",year:"2019 - 2021",description:"Secured a 86% in the final board examination and was a dedicated JEE aspirant with a 91 percentile score."},
+    {title:"Senior Secondary School CBSE",place:"Kaathir Vidyaa Mandhir",year:"2019 - 2021",description:"Secured a 85% in the final board examination and was a dedicated JEE aspirant with a 91 percentile score."},
     {title:"Secondary School CBSE",place:"The Earnest Academy",year:"2016-2019",description:"Achieved a 91% in the final board examination while actively engaging in both chess and athletics."},
     {title:"Data Science Intern",place:"Let's Grow More",year:"Apr23 - May23",description:"Applied advanced data analysis techniques, including data preprocessing, EDA and ML algorithms to real-world problems"}
 ]
@@ -21,9 +21,9 @@ const Skills_data=[
 
 const home= () =>{
     return(
-        <section class="h_container home-body">
+        <section class="container home-body">
             <div className="control"><Navbar/></div>
-            <div class="h_main-title">
+            <div class="main-title">
                 <h2>About <span> me</span></h2>
             </div>
             <div class="h_about-container">
@@ -44,9 +44,9 @@ const home= () =>{
                     </div>
                 </div>
                 <div class="btn-con">
-                        <a href="https://drive.google.com/file/d/1nC1Y8SR24wSlHstiKh2BnC6O1HRRTTg5/view?usp=drive_link" target="_blank" class="main-btn">
+                        <a href="https://drive.google.com/file/d/1nC1Y8SR24wSlHstiKh2BnC6O1HRRTTg5/view?usp=drive_link" target="_blank" class="main-btn flex-center">
                             <span class="btn-text">Download CV</span>
-                            <span class="btn-icon"><ion-icon name="download"></ion-icon></span>
+                            <span class="btn-icon flex-center"><ion-icon name="download"></ion-icon></span>
                         </a>
                 </div>
             </div>
@@ -56,7 +56,7 @@ const home= () =>{
                 {Skills_data.map((skdata) =>( 
                     <div class="progress-bar">
                         <p class="prog-title">{skdata.name}</p>
-                        <div class="progress-con">
+                        <div class="progress-con flex-center">
                             <p class="prog-text">{skdata.percentage}%</p>
                             <div class="progress">
                                 <span class={skdata.class}></span>
@@ -70,7 +70,7 @@ const home= () =>{
             <div class="h_timeline">
                 {timeline_data.map((tdata) =>(
                  <div class="timeline-item">
-                 <div class="tl-icon">
+                 <div class="tl-icon flex-center">
                      <ion-icon name="briefcase"></ion-icon>
                  </div>
                  <p class="tl-duration">{tdata.year}</p>
