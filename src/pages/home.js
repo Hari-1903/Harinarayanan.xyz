@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../components/navbar";
-import "./home.css"
 import my_potrait from '../assests/Harinarayanan.jpg'
 
 const timeline_data=[
@@ -21,14 +20,14 @@ const Skills_data=[
 
 const home= () =>{
     return(
-        <section class="container home-body">
-            <div className="control"><Navbar/></div>
-            <div class="main-title">
-                <h2>About <span> me</span></h2>
+        <section className="pt-[4rem] pb-[4rem] pr-[26rem] pl-[26rem] text-[2rem] text-white bg-[#1d1d1d] font-['Poppins'] home-body">
+            <div className="fixed z-10 top-[50%] right-[3%] translate-y-[-50%]"><Navbar/></div>
+            <div className="text-center">
+                <h2 className="relative uppercase text-[6rem] font-bold">About <span className="text-[#ee5c67]"> me</span></h2>
             </div>
-            <div class="h_about-container">
-                <div class="left-about flex-center">
-                    <p>
+            <div className="grid pt-12 pb-48 grid-cols-[1.1fr,1fr]">
+                <div className="pr-20 flex items-center justify-center text-[#fff5fd]">
+                    <p className="leading-[3rem] p-4">
                     As an aspiring engineering graduate, My passion lies in coding and its applications.
                     From the practical use of coding in everyday tasks to its role in creating innovative solutions, 
                     I am captivated by the power of coding to bring ideas to life.
@@ -38,44 +37,44 @@ const home= () =>{
                     of technology and make a meaningful impact in the world of computers.
                     </p>
                 </div>
-                <div class="right-about flex-center">
-                    <div class="about-item flex-center">
-                        <img src={my_potrait} class="myself"/>
+                <div className="flex items-center justify-center">
+                    <div className="rounded-md border-2 border-[#555] transition-all ease-in shadow-[2px_4px_30px_5px_rgba(0,0,0,.1)] hover:scale-[1.02] hover:border-1 hover:border-[#d73b67]  flex items-center justify-center">
+                        <img src={my_potrait} className="w-full rounded-md" alt="Potrait of Harinarayanan"/>
                     </div>
                 </div>
-                <div class="btn-con">
-                        <a href="https://drive.google.com/file/d/1nC1Y8SR24wSlHstiKh2BnC6O1HRRTTg5/view?usp=drive_link" target="_blank" class="main-btn flex-center">
-                            <span class="btn-text">Download CV</span>
-                            <span class="btn-icon flex-center"><ion-icon name="download"></ion-icon></span>
+                <div className="flex self-start">
+                        <a href="https://drive.google.com/file/d/1nC1Y8SR24wSlHstiKh2BnC6O1HRRTTg5/view?usp=drive_link" target="_blank" className="font-semibold relative overflow-hidden mt-[2rem] rounded-[40px] border-2 border-[#df4667] before:absolute before:top-0 before:right-0 before:content-[''] before:translate-x-[100%] hover:before:duration-500 hover:before:transition-all hover:before:ease-in  flex items-center hover:before:w-full hover:before:h-full hover:before:bg-[#df4667] hover:before:translate-x-0 justify-center" rel="noreferrer">
+                            <span className="pl-[4rem] pr-[4rem] z-10">Download CV</span>
+                            <span className="p-[1.6rem] rounded-[50%] bg-[#df4667]  flex items-center justify-center"><ion-icon name="download" size='large'></ion-icon></span>
                         </a>
                 </div>
             </div>
-            <div class="h_about-stats">
-                <h4 class="h_stat-title">What I can do?</h4>
-                <div class="progress-bars">
+            <div className="pb-32">
+                <h4 className="uppercase font-bold text-center relative text-[2.4rem] pt-[5rem] pb-[5rem] before:content-[''] before:left-[50%] before:translate-x-[-50%] before:absolute before:top-0 before:w-2/5 before:h-[2px] before:bg-[#3e3e3e]">What I can do?</h4>
+                <div className="grid grid-cols-2 gap-[3.2rem]">
                 {Skills_data.map((skdata) =>( 
-                    <div class="progress-bar">
-                        <p class="prog-title">{skdata.name}</p>
-                        <div class="progress-con flex-center">
-                            <p class="prog-text">{skdata.percentage}%</p>
-                            <div class="progress">
-                                <span class={skdata.class}></span>
+                    <div className="flex flex-col">
+                        <p className="uppercase font-medium">{skdata.name}</p>
+                        <div className="progress-con  flex items-center justify-center">
+                            <p className="text-[#f46767]">{skdata.percentage}%</p>
+                            <div className="w-full h-3 ml-6 relative bg-[#555]">
+                                <span className={skdata.class}></span>
                             </div>
                         </div>
                     </div>
                 ))}
                 </div>
             </div>
-            <h4 class="h_stat-title">Survial History</h4>
-            <div class="h_timeline">
+            <h4 className="uppercase font-bold text-center relative text-[2.4rem] pt-[5rem] pb-[5rem] before:content-[''] before:left-[50%] before:translate-x-[-50%] before:absolute before:top-0 before:w-2/5 before:h-[2px] before:bg-[#3e3e3e]">Survial History</h4>
+            <div className="grid grid-cols-2 gap-[3.2rem] pb-28">
                 {timeline_data.map((tdata) =>(
-                 <div class="timeline-item">
-                 <div class="tl-icon flex-center">
+                 <div className="relative pl-16 border-l-2 border-[#555]">
+                 <div className="absolute top-0 w-[50px] h-[50px] left-[-27px] bg-[#d73b67] rounded-[50%] flex items-center justify-center">
                      <ion-icon name="briefcase"></ion-icon>
                  </div>
-                 <p class="tl-duration">{tdata.year}</p>
-                 <h5>{tdata.title}<span> <br></br>-{tdata.place}</span></h5>
-                 <p>{tdata.description}</p>
+                 <p className="inline-block text-base uppercase font-medium pt-[.3rem] pb-[.3rem] pl-[.8rem] pr-[.8rem] bg-[#555] rounded-2xl">{tdata.year}</p>
+                 <h5 className="uppercase text-[2rem] font-semibold pt-[1.6rem] pb-[1.6rem]">{tdata.title}<span className="font-medium text-[2rem] text-[#ffedf5]"> <br></br>-{tdata.place}</span></h5>
+                 <p className="text-[1.6rem] text=[#fff5fd]">{tdata.description}</p>
                 </div>
                 ))}  
             </div>

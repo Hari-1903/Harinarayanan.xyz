@@ -1,24 +1,23 @@
 import React from "react";
-import './landing.css';
 
 const landing=()=>{
     return(
     <body>
-        <div className="wrapper flex-center" id="back">  
-            <div className="profile-card flex-center full-size">
-                <div className="card-info">
-                    <div className="animated-txt displayed">
-                        <p>Hello 👋 I'm Harinarayanan</p>
+        <div className="min-h-screen p-12 pt-24 bg-[url('/public/background.svg')] bg-no-repeat bg-cover flex items-center justify-center" id="back">  
+            <div className="max-w-[100rem] min-h-[460px] rounded-[12px] bg-[#fff5fd] m-auto shadow-[0_6px_20px_-10px_rgba(33,34,36,0.85)] flex items-center justify-center hover:scale-[1.05] hover:shadow-[2px_10px_30px_-10px_rgba(33,34,36,0.85)] transition-all ease-in h-full w-full">
+                <div className="mt-40 text-center pl-5 pr-5 pb-10 transition-all"> 
+                    <div className="text-gray-300 text-4xl uppercase w-full scale-[2] block">
+                        <p className="text-black">Hello 👋 I'm Harinarayanan</p>
                         <section className="animation">
-                        <div className="first"><div>Engineering Student</div></div>
-                        <div className="second"><div>Aspiring Data scientist</div></div>
-                        <div className="third"><div>Web developer</div></div>
+                        <div className="first "><div className="bg-[rgb(27,133,171)]">Engineering Student</div></div>
+                        <div className="second"><div className="bg-[#bb861c]">Aspiring Data scientist</div></div>
+                        <div className="third"><div className="bg-[#9c0621]">Web developer</div></div>
                         </section>
-                        <div className="btn-container flex-center">
+                        <div className="flex-col pt-8 scale-[0.4]  flex items-center justify-center">
                             <a href="/home" className="lnd-button">
                                 <div className="lnd-button__line"></div>
                                 <div className="lnd-button__line"></div>
-                                <span className="lnd-button__text flex-center full-size">KNOW MORE</span>
+                                <span className="lnd-button__text  flex items-center justify-center h-full w-full">KNOW MORE</span>
                             </a>
                         </div>
                     </div>    
