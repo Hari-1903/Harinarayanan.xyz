@@ -43,7 +43,7 @@ const home= () =>{
                     </div>
                 </div>
                 <div className="flex self-start">
-                        <a href="https://drive.google.com/file/d/1nC1Y8SR24wSlHstiKh2BnC6O1HRRTTg5/view?usp=drive_link" target="_blank" className="font-semibold relative overflow-hidden mt-[2rem] rounded-[40px] border-2 border-[#df4667] before:absolute before:top-0 before:right-0 before:content-[''] before:translate-x-[100%] hover:before:duration-500 hover:before:transition-all hover:before:ease-in  flex items-center hover:before:w-full hover:before:h-full hover:before:bg-[#df4667] hover:before:translate-x-0 justify-center" rel="noreferrer">
+                        <a href="https://drive.google.com/file/d/10cEdb1Qh4jSLlE6P3faOWz_SzhOfRDDz/view?usp=sharing" target="_blank" className="font-semibold relative overflow-hidden mt-[2rem] rounded-[40px] border-2 border-[#df4667] before:absolute before:top-0 before:right-0 before:content-[''] before:translate-x-[100%] hover:before:duration-500 hover:before:transition-all hover:before:ease-in  flex items-center hover:before:w-full hover:before:h-full hover:before:bg-[#df4667] hover:before:translate-x-0 justify-center" rel="noreferrer">
                             <span className="pl-[4rem] pr-[4rem] z-10">Download CV</span>
                             <span className="p-[1.6rem] rounded-[50%] bg-[#df4667]  flex items-center justify-center"><ion-icon name="download" size='large'></ion-icon></span>
                         </a>
