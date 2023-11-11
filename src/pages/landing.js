@@ -1,4 +1,5 @@
 import React from "react";
+import Roles from "../components/roles";
 
 const landing=()=>{
     return(
@@ -8,11 +9,7 @@ const landing=()=>{
                 <div className="mt-40 text-center pl-5 pr-5 pb-10 transition-all"> 
                     <div className="text-gray-300 text-4xl uppercase w-full scale-[2] block">
                         <p className="text-black">Hello 👋 I'm Harinarayanan</p>
-                        <section className="animation">
-                        <div className="first "><div className="bg-[rgb(27,133,171)]">Engineering Student</div></div>
-                        <div className="second"><div className="bg-[#bb861c]">Aspiring Data scientist</div></div>
-                        <div className="third"><div className="bg-[#9c0621]">Web developer</div></div>
-                        </section>
+                        <Roles/>
                         <div className="flex-col pt-8 scale-[0.4]  flex items-center justify-center">
                             <a href="/home" className="lnd-button">
                                 <div className="lnd-button__line"></div>
