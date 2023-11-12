@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Harinaranan.xyz Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+    <img src="./src/assests/readme_banner.png" width="60%%">
+</p>
 
-## Available Scripts
+Welcome to my portfolio crafted from scratch using React and Tailwind CSS. It's a fully responsive showcase designed for simplicity and versatility. Feel free to make it your own by forking it and adapting it to highlight your best skills, projects, and experiences. Don't forget to give credit where it's due – tag me when you steal the spotlight! 🌟
 
-In the project directory, you can run:
+**Table of Contents**:
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+  - [Home Page](#home-page)
+  - [Project Page](#project-page)
+  - [Experience Page](#experience-page)
+  - [Contact Page](#contact-page)
+- [Made by](#made-by)
+<!-- - [License](#license) -->
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🖥️ React.js: Frontend framework
+- 🎨 Tailwind Css: Styling
+- 🎯 Ion-Icons: Icon library
+- 💻 React Router Dom: Routing
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- 🎨 Uniform Aesthetics: Boasting a sleek and polished appearance across the board.
+- 🔥 Highlighting Expertise, Projects, and Skills: Offering a thorough snapshot of my professional journey.
+- 📱 Responsiveness at its Core: Ensuring a stellar display on any device. (Under-Construction👷)
+- 🙏 Mindful Accessibility: Crafted with inclusivity in focus, making it user-friendly for all abilities.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Home Page
 
-### `npm run build`
+- 🙋‍♀️ Small About:  A snapshot of who I am and my passions. 🔥
+- 📄 Full Resume: A option to download my resume.
+- 💼 Current Skills: An overview of your present work experience and skills.
+- 🔥 Journey Timeline: A simple path through my experiences.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Project Page
+Each of my projects displayed including a compact screenshot, functioning seamlessly with its corresponding description, all linking to their respective files.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Experience Page
+A dedicated page showcasing my professional experience, highlighting key takeaways, and featuring the projects I undertook during those periods. (Under-Construction 🏗️)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Contact Page
 
-### `npm run eject`
+- 📧 My Email: My professional email address for contacting me.
+- 💻 My Social Links: My social media profiles where I can be reached.
+- 📩 Form to Contact Me: A form that visitors can fill out to get in touch with me. (Under-Construction🚧)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Made by <a href="https://github.com/Hari-1903"><img align="center" src="https://contrib.rocks/image?repo=hari-1903/harinarayanan.xyz"/></a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- 
+## License
+This project is licensed under the [Mozilla Public License](./LI). -->
