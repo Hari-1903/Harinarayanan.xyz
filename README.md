@@ -11,7 +11,7 @@ Welcome to my portfolio crafted from scratch using React and Tailwind CSS. It's 
 - [Features](#features)
   - [Home Page](#home-page)
   - [Project Page](#project-page)
-  - [Experience Page](#experience-page)
+  - [Certifications Page](#certification-page)
   - [Contact Page](#contact-page)
 - [Made by](#made-by)
 <!-- - [License](#license) -->
@@ -40,8 +40,8 @@ Welcome to my portfolio crafted from scratch using React and Tailwind CSS. It's 
 ### Project Page
 Each of my projects displayed including a compact screenshot, functioning seamlessly with its corresponding description, all linking to their respective files.
 
-### Experience Page
-A dedicated page showcasing my professional experience, highlighting key takeaways, and featuring the projects I undertook during those periods. (Under-Construction 🏗️)
+### Certification Page
+A dedicated page showcasing my certifications, highlighting key takeaways, and featuring the projects where I used those skills. (Under-Construction 🏗️)
 
 ### Contact Page
 
