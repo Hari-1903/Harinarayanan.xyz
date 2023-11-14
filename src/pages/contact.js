@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/navbar";
 
-const contact = () =>{
+const Contact = () =>{
     return(
         <div className="overflow-hidden h-screen bg-[#1d1d1d]">
             <div className="fixed z-10 top-[50%] right-[3%] translate-y-[-50%]"><Navbar/></div>
@@ -91,4 +91,4 @@ const contact = () =>{
     );
 }
 
-export default contact;
+export default Contact;

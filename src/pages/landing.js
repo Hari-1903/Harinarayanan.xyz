@@ -1,7 +1,7 @@
 import React from "react";
 import Roles from "../components/roles";
 
-const landing=()=>{
+const Landing=()=>{
     return(
     <body>
         <div className="min-h-screen p-12 pt-24 bg-[url('/public/background.svg')] bg-no-repeat bg-cover flex items-center justify-center" id="back">  
@@ -25,4 +25,4 @@ const landing=()=>{
     );
 }
 
-export default landing
+export default Landing

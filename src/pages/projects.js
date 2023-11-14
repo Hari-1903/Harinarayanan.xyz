@@ -15,7 +15,7 @@ import c_working from '../assests/c_working.png';
 import c_logo from '../assests/c_logo.png';
 
 
-const project = () =>{
+const Project = () =>{
     return(
         <section class="pt-[4rem] pb-[4rem] pr-[26rem] pl-[26rem] text-[2rem] text-white bg-[#1d1d1d] font-['Poppins']">
             <div className="fixed z-10 top-[50%] right-[3%] translate-y-[-50%]"><Navbar/></div>
@@ -90,4 +90,4 @@ const project = () =>{
     );
 }
 
-export default project;
+export default Project;

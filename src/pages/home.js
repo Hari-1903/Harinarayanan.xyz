@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/navbar";
-import my_potrait from '../assests/Harinarayanan.jpg'
+import my_potrait from '../assests/Harinarayanan.jpg';
+import Skilltab from "../components/skillstab";
 
 const timeline_data=[
     {title:"Computer Science Engineering (AIML)",place:"-SRM University",year:"2021 - Present",description:"Coursework of significance includes AIML, DSA, OOPS, and Computer Organization and Architecture. 9.34 curent CGPA"},
@@ -18,9 +19,10 @@ const Skills_data=[
     {name:'JavaScript',percentage:'60',class:'sixty'},
 ]
 
-const home= () =>{
+const Home= () =>{
     return(
-        <section className="pt-[4rem] pb-[4rem] pr-[26rem] pl-[26rem] text-[2rem] text-white bg-[#1d1d1d] font-['Poppins'] home-body">
+        <div>
+        <section className="pt-[4rem] pb-[4rem] pr-[26rem] pl-[26rem] text-[2rem] text-white bg-[#1d1d1d] font-['Poppins']">
             <div className="fixed z-10 top-[50%] right-[3%] translate-y-[-50%]"><Navbar/></div>
             <div className="text-center">
                 <h2 className="relative uppercase text-[6rem] font-bold">About <span className="text-[#ee5c67]"> me</span></h2>
@@ -65,11 +67,16 @@ const home= () =>{
                 ))}
                 </div>
             </div>
+        </section>
+        <h4 className="uppercase font-bold text-center relative text-[2.4rem] pt-[5rem] pb-[5rem] text-white bg-[#1d1d1d] font-['Poppins'] before:content-[''] before:left-[50%] before:translate-x-[-50%] before:absolute before:top-0 before:w-2/5 before:h-[2px] before:bg-[#3e3e3e]">Things I know</h4>
+            <Skilltab/>
+        <div className="pb-28 bg-[#1d1d1d]"></div>
+        <section className="pt-[4rem] pb-[4rem] pr-[26rem] pl-[26rem] text-[2rem] text-white bg-[#1d1d1d] font-['Poppins']">
             <h4 className="uppercase font-bold text-center relative text-[2.4rem] pt-[5rem] pb-[5rem] before:content-[''] before:left-[50%] before:translate-x-[-50%] before:absolute before:top-0 before:w-2/5 before:h-[2px] before:bg-[#3e3e3e]">Survial History</h4>
             <div className="grid grid-cols-2 gap-[3.2rem] pb-28">
                 {timeline_data.map((tdata) =>(
                  <div className="relative pl-16 border-l-2 border-[#555]">
-                 <div className="absolute top-0 w-[50px] h-[50px] left-[-27px] bg-[#d73b67] rounded-[50%] flex items-center justify-center">
+                     <div className="absolute top-0 w-[50px] h-[50px] left-[-27px] bg-[#d73b67] rounded-[50%] flex items-center justify-center">
                      <ion-icon name="briefcase"></ion-icon>
                  </div>
                  <p className="inline-block text-base uppercase font-medium pt-[.3rem] pb-[.3rem] pl-[.8rem] pr-[.8rem] bg-[#555] rounded-2xl">{tdata.year}</p>
@@ -79,8 +86,9 @@ const home= () =>{
                 ))}  
             </div>
         </section>
+        </div>
     );
 }
 
 
-export default home;
+export default Home;

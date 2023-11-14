@@ -1,6 +1,6 @@
 import React from "react";
 
-const roles = () =>{
+const Roles = () =>{
     return(
         <section className="animation flex flex-col items-center">
             <div className="first "><div className="bg-[rgb(27,133,171)]">Engineering Student</div></div>
@@ -10,4 +10,4 @@ const roles = () =>{
     );
 }
 
-export default roles;
+export default Roles;

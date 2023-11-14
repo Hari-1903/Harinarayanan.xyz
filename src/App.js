@@ -4,7 +4,7 @@ import LandingPage from './pages/landing';
 import Home from './pages/home';
 import Contact from './pages/contact';
 import Projects from './pages/projects';
-import Experience from './pages/experience';
+import Certification from './pages/certification';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Route path='/home' element={<Home/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/projects' element={<Projects/>}/>
-      <Route path='/experience' element={<Experience/>}/>
+      <Route path='/certifications' element={<Certification/>}/>
     </Routes>
   );
 }
