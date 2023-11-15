@@ -70,9 +70,9 @@ const Home= () =>{
         </section>
         <h4 className="uppercase font-bold text-center relative text-[2.4rem] pt-[5rem] pb-[5rem] text-white bg-[#1d1d1d] font-['Poppins'] before:content-[''] before:left-[50%] before:translate-x-[-50%] before:absolute before:top-0 before:w-2/5 before:h-[2px] before:bg-[#3e3e3e]">Things I know</h4>
             <Skilltab/>
-        <div className="pb-28 bg-[#1d1d1d]"></div>
+        <div className="pb-24 bg-[#1d1d1d]"></div>
         <section className="pt-[4rem] pb-[4rem] pr-[26rem] pl-[26rem] text-[2rem] text-white bg-[#1d1d1d] font-['Poppins']">
-            <h4 className="uppercase font-bold text-center relative text-[2.4rem] pt-[5rem] pb-[5rem] before:content-[''] before:left-[50%] before:translate-x-[-50%] before:absolute before:top-0 before:w-2/5 before:h-[2px] before:bg-[#3e3e3e]">Survial History</h4>
+            <h4 className="uppercase font-bold text-center relative text-[2.4rem] pt-[5rem] pb-[5rem] before:content-[''] before:left-[50%] before:translate-x-[-50%] before:absolute before:top-0 before:w-2/5 before:h-[2px] before:bg-[#3e3e3e]">my TimeLine</h4>
             <div className="grid grid-cols-2 gap-[3.2rem] pb-28">
                 {timeline_data.map((tdata) =>(
                  <div className="relative pl-16 border-l-2 border-[#555]">
