@@ -1,7 +1,8 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Navbar from "../components/navbar";
 import my_potrait from '../assests/Harinarayanan.jpg';
 import Skilltab from "../components/skillstab";
+import Lenis from '@studio-freight/lenis';
 
 const timeline_data=[
     {title:"Computer Science Engineering (AIML)",place:"-SRM University",year:"2021 - Present",description:"Coursework of significance includes AIML, DSA, OOPS, and Computer Organization and Architecture. 9.34 curent CGPA"},
@@ -20,6 +21,16 @@ const Skills_data=[
 ]
 
 const Home= () =>{
+    
+    useEffect(()=>{
+        const lenis = new Lenis()
+        function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+    },[])
+
     return(
         <div>
         <section className="pt-[4rem] pb-[4rem] pr-[26rem] pl-[26rem] text-[2rem] text-white bg-[#1d1d1d] font-['Poppins']">

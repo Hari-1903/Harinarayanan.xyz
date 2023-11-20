@@ -1,6 +1,5 @@
 import React, { useEffect, useRef }  from "react";
 import {useTransform, useScroll,motion} from "framer-motion";
-import Lenis from '@studio-freight/lenis'
 
 const Skilltab = () =>{
     const container = useRef(null)
@@ -10,15 +9,6 @@ const Skilltab = () =>{
     })
 
     const x = useTransform(scrollYProgress,[0,1],[0,-window.innerHeight/2])
-
-    useEffect(()=>{
-        const lenis = new Lenis()
-        function raf(time) {
-        lenis.raf(time)
-        requestAnimationFrame(raf)
-    }
-    requestAnimationFrame(raf)
-    },[])
 
     const skills=[{name:'html'},{name:'css'},{name:'js'},{name:'react'},{name:'tailwind'},{name:'nodejs'},{name:'c'},{name:'cpp'},{name:'py'},
     {name:'git'},{name:'github'},{name:'mysql'},{name:'vercel'},{name:'netlify'},{name:'vscode'}]

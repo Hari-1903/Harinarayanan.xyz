@@ -1,5 +1,6 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Navbar from "../components/navbar";
+import Lenis from '@studio-freight/lenis';
 
 import recy_working from '../assests/recylink_working.png';
 import recy_logo from '../assests/recylink_logo.png'
@@ -16,6 +17,16 @@ import c_logo from '../assests/c_logo.png';
 
 
 const Project = () =>{
+    
+    useEffect(()=>{
+        const lenis = new Lenis()
+        function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+    },[])
+
     return(
         <section class="pt-[4rem] pb-[4rem] pr-[26rem] pl-[26rem] text-[2rem] text-white bg-[#1d1d1d] font-['Poppins']">
             <div className="fixed z-10 top-[50%] right-[3%] translate-y-[-50%]"><Navbar/></div>
