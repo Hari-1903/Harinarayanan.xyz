@@ -1,8 +1,40 @@
-import React from "react";
+import React, {useState} from "react";
 import Navbar from "../components/navbar";
 import transition from "../components/transition";
+import { db } from '../firebase';
 
 const Contact = () =>{
+    const [name,setName] = useState("");
+    const [email,setEmail] = useState("");
+    const [subject,setSubject] = useState("");
+    const [message,setMessage] = useState("");
+    const [loader,setLoader] = useState("");
+
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        setLoader(true);
+
+        db.collection('contact').add({
+            name: name,
+            email: email,
+            message: message,
+            subject: subject
+        })
+        .then(()=>{
+            alert('Message has been submitted 👍');
+            setLoader(false);
+        })
+        .catch((error) => {
+            alert(error.message);
+            setLoader(false);
+        });
+
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+    };
+    
     return(
         <div className="overflow-hidden h-screen bg-[#1d1d1d]">
             <div className="fixed z-10 top-[50%] right-[3%] translate-y-[-50%]"><Navbar/></div>
@@ -69,19 +101,19 @@ const Contact = () =>{
                             </div>
                         </div>
                         <div class="right-contact ml-10">
-                            <form action="">
+                            <form action="" onSubmit={handleSubmit}>
                                 <div class="mt-10 mb-10 flex">
-                                    <input type="text" required placeholder=" Full Name" className="w-full resize-none rounded-[30px] pt-3 pl-4 pr-4 pb-4 bg-[#555555] text-[#fff5fd]"/>
-                                    <input type="email" required placeholder=" Mail Id" className="w-full resize-none rounded-[30px] pt-3 pl-4 pr-4 pb-4 bg-[#555555] text-[#fff5fd] ml-6"/>
+                                    <input type="text" required placeholder=" Full Name" value={name} onChange={(e)=>setName(e.target.value)} className="w-full resize-none rounded-[30px] pt-3 pl-4 pr-4 pb-4 bg-[#555555] text-[#fff5fd]"/>
+                                    <input type="email" required placeholder=" Mail Id" value={email} onChange={(e)=>setEmail(e.target.value)} className="w-full resize-none rounded-[30px] pt-3 pl-4 pr-4 pb-4 bg-[#555555] text-[#fff5fd] ml-6"/>
                                 </div>
                                 <div class="mt-10 mb-10">
-                                    <input type="text" required placeholder=" Subject" className="w-full resize-none rounded-[30px] pt-3 pl-4 pr-4 pb-4 bg-[#555555] text-[#fff5fd]"/>
+                                    <input type="text" required placeholder=" Subject" value={subject} onChange={(e)=>setSubject(e.target.value)} className="w-full resize-none rounded-[30px] pt-3 pl-4 pr-4 pb-4 bg-[#555555] text-[#fff5fd]"/>
                                 </div>
                                 <div class="mt-10 mb-10">
-                                    <textarea name="" id="" cols="15" rows="8" placeholder="Got any message for me?" className="w-full resize-none rounded-[30px] pt-3 pl-4 pr-4 pb-4 bg-[#555555] text-[#fff5fd]"></textarea>
+                                    <textarea name="" id="" cols="15" rows="8" placeholder="Got any message for me?" value={message} onChange={(e)=>setMessage(e.target.value)} className="w-full resize-none rounded-[30px] pt-3 pl-4 pr-4 pb-4 bg-[#555555] text-[#fff5fd]"></textarea>
                                 </div>
                                 <div class="flex items-center justify-center">
-                                    <btn className="text-white pt-2 pl-20 pb-2 pr-20 rounded-[10px] border-2 border-[#f46767] hover:bg-[#f46767] hover:scale-[0.95] transition-all ease-in">Submit</btn>
+                                    <button type="submit" style={{background:loader?"#f46767": ""}} className="text-white pt-2 pl-20 pb-2 pr-20 rounded-[10px] border-2 border-[#f46767] hover:bg-[#f46767] hover:scale-[0.95] transition-all ease-in">Submit</button>
                                 </div>
                             </form>
                         </div>
