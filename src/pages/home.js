@@ -2,6 +2,7 @@ import React,{useEffect} from "react";
 import Navbar from "../components/navbar";
 import my_potrait from '../assests/Harinarayanan.jpg';
 import Skilltab from "../components/skillstab";
+import transition from "../components/transition";
 import Lenis from '@studio-freight/lenis';
 
 const timeline_data=[
@@ -102,4 +103,4 @@ const Home= () =>{
 }
 
 
-export default Home;
+export default transition(Home);

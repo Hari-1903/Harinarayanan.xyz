@@ -1,6 +1,7 @@
 import React,{useEffect} from "react";
 import Navbar from "../components/navbar";
 import Lenis from '@studio-freight/lenis';
+import transition from "../components/transition";
 
 const Experience= () =>{
 
@@ -21,4 +22,4 @@ const Experience= () =>{
         </section>
     );
 }
-export default Experience;
+export default transition(Experience);

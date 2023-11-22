@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/navbar";
+import transition from "../components/transition";
 
 const Contact = () =>{
     return(
@@ -91,4 +92,4 @@ const Contact = () =>{
     );
 }
 
-export default Contact;
+export default transition(Contact);

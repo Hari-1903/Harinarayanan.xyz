@@ -1,6 +1,7 @@
 import React,{useEffect} from "react";
 import Navbar from "../components/navbar";
 import Lenis from '@studio-freight/lenis';
+import transition from "../components/transition";
 
 import recy_working from '../assests/recylink_working.png';
 import recy_logo from '../assests/recylink_logo.png'
@@ -101,4 +102,4 @@ const Project = () =>{
     );
 }
 
-export default Project;
+export default transition(Project);
