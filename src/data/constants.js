@@ -1,8 +1,8 @@
 export const Bio = {
   name: "Harinarayanan R",
   roles: [
-    "Web Developer",
     "Data Scientist",
+    "Web Developer",
     "CSE Engineer",
   ],
   description:"Welcome to my little corner of the internet! From everyday problem-solving to web development and machine learning, I love bringing ideas to life. Excited for tech impact!",
@@ -182,76 +182,51 @@ export const education = [
 
 export const projects = [
   {
-    id: 11,
-    title: "loreum Ipsum",
-    date: "Jan 2024 - Dec 2023",
-    description:
-      "A Rule Builder application “Decision Hub” that empowers Business Analysts to create, save, and visualize decision strategies. Provide a no-code rule writing experience and visual representation to test these rules in real-time and observe the calculations at each step.",
-    image:
-      "https://github.com/rishavchanda/DecisionHub/raw/master/assets/testRule.jpg",
+    id: 1,
+    title: "Recylink",
+    date: "Dec 2023 - Jan 2024",
+    description:"Recylink is a user-centric digital platform focusing on waste management in India. It enables seamless reporting and resolution of waste-related issues by connecting users with local authorities. A deep learning model categorizes waste for efficient collection and transport",
+    image:"https://firebasestorage.googleapis.com/v0/b/hari--portfolio.appspot.com/o/Recylink.png?alt=media&token=eb462f16-b262-49df-bef8-d9753156c730",
     tags: [
-      "React Js",
-      "PostgressSQL",
-      "Node Js",
-      "Express Js",
-      "Redux",
-      "React Flow",
+      "Next Js",
+      "TypeScript",
+      "Deep Learning",
+      "Tailwind CSS",
+      "Vercel",
     ],
-    category: "web app",
-    github: "https://github.com/rishavchanda/DecisionHub",
-    webapp: "https://decisionhub.netlify.app/",
+    github: "https://github.com/Hari-1903/Recylink",
+    webapp: "https://recylinksih.vercel.app/",
   },
   {
-    id: 9,
-    title: "Trackify",
-    date: "Jun 2023 - Jul 2023",
-    description:
-      "Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
-    image:
-      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+    id: 2,
+    title: "MapmyTask",
+    date: "Feb 2023",
+    description:"This application will allow users to create, view, and manage tasks in an interactive map interface. By leveraging the power of maps and providing a user-friendly interface,it help users to quickly view the proximity of tasks and manage their daily tasks more effectively.",
+    image:"https://firebasestorage.googleapis.com/v0/b/hari--portfolio.appspot.com/o/MapmyTask.png?alt=media&token=877237f5-a204-48c7-a986-f3dd7438b771",
     tags: [
-      "Docker",
-      "AWS",
-      "DuckDNS",
-      "Eslint",
-      "Husky",
-      "CI/CD",
-      "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
-      "Redux",
+      "Leaflet",
+      "Javascript",
+      "CSS",
+      "HTML",
+      "Netlify",
     ],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Trackify",
-    webapp: "https://trackify-management.netlify.app/",
+    github: "https://github.com/Hari-1903/MapMyTask",
+    webapp: "https://mapmytask.netlify.app/",
   },
   {
     id: 0,
-    title: "Podstream",
-    date: "Apr 2023 - May 2023",
-    description:
-      "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
-    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Podstream",
-    webapp: "https://podstream.netlify.app/",
-    member: [
-      // {
-      //   name: "Rishav Chanda",
-      //   img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-      //   linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-      //   github: "https://github.com/rishavchanda/",
-      // },
-      // {
-      //   name: "Upasana Chaudhuri",
-      //   img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-      //   linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-      //   github: "https://github.com/upasana0710",
-      // },
+    title: "Stock Market Prediction and Forecasting using Stacked LSTM",
+    description:"The objective of this project is to create a robust model using Recurrent Neural Networks (RNNs), with a particular emphasis on the Long-Short Term Memory (LSTM) architecture, to forecast future stock market values. This model will use historical data of the stock market to learn patterns and relationships and use this knowledge to make predictions for future stock market values.",
+    image:"https://firebasestorage.googleapis.com/v0/b/hari--portfolio.appspot.com/o/Stock%20Forecasting.png?alt=media&token=bde8996c-8ff4-4dc3-bbec-d8c8f8bf0798",
+    tags: 
+    [
+      "Jupyter Notebook", 
+      "Tensorflow", 
+      "RNN", 
+      "LSTM"
     ],
+    github: "https://github.com/Hari-1903/DataScience_Internship-LGM",
+    webapp: "https://github.com/Hari-1903/DataScience_Internship-LGM/blob/main/Task_4/Task4.ipynb",
   },
 ];
 
