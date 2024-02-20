@@ -1,8 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
-import { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import { Snackbar } from "@mui/material";
+import { db } from "../firebase";  
 
 const Container = styled.div`
   display: flex;
@@ -132,21 +130,30 @@ const ContactButton = styled.input`
 `;
 
 const Contact = () => {
-  //hooks
-  const [open, setOpen] = React.useState(false);
-  const form = useRef();
+  const [name,setName] = useState("");
+  const [email,setEmail] = useState("");
+  const [subject,setSubject] = useState("");
+  const [message,setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e) =>{
     e.preventDefault();
-    // emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
-    //   .then((result) => {
-    //     setOpen(true);
-    //     form.current.reset();
-    //   }, (error) => {
-    //     console.log(error.text);
-    //   });
+    db.collection('contacts').add({
+      name: name,
+      email: email,
+      message: message,
+      subject: subject
+  })
+  .then(()=>{
+      alert('Message has been submitted 👍');
+  })
+  .catch((error) => {
+      alert(error.message);
+  });
+  setName("");
+  setEmail("");
+  setSubject("");
+  setMessage("");
   };
-
   return (
     <Container>
       <Wrapper>
@@ -154,21 +161,14 @@ const Contact = () => {
         <Desc>
           Feel free to reach out to me for any questions or opportunities!
         </Desc>
-        <ContactForm ref={form} onSubmit={handleSubmit}>
+        <ContactForm onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" rows="4" name="message" />
+          <ContactInput placeholder="Your Email" type="email" value={email} onChange={(e)=>setEmail(e.target.value)} />
+          <ContactInput placeholder="Your Name" type="text" value={name} onChange={(e)=>setName(e.target.value)} />
+          <ContactInput placeholder="Subject" type="text" value={subject} onChange={(e)=>setSubject(e.target.value)} />
+          <ContactInputMessage placeholder="Message" rows="4" tyt="message" value={message} onChange={(e)=>setMessage(e.target.value)}/>
           <ContactButton type="submit" value="Send" />
         </ContactForm>
-        <Snackbar
-          open={open}
-          autoHideDuration={6000}
-          onClose={() => setOpen(false)}
-          message="Email sent successfully!"
-          severity="success"
-        />
       </Wrapper>
     </Container>
   );
