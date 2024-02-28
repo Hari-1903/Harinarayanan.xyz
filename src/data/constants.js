@@ -121,6 +121,18 @@ export const skills = [
 
 export const experiences = [
   {
+    id: 2,
+    img: "https://firebasestorage.googleapis.com/v0/b/hari--portfolio.appspot.com/o/CEM.jpg?alt=media&token=1d67c5a3-dea0-4ec1-8de8-f918295fee44",
+    role: "Project Intern",
+    company: "Centre for Electric Mobility (CEM)",
+    date: "Feburary 2024 - Present",
+    desc: "Engaged in collaborative mentorship to gain comprehensive insights into the seamless integration of software with hardware, focusing on its practical applications within the realm of autonomous vehicles.",
+    skills: [
+      "Robot Operating System (ROS)",
+      "Python Programming",
+    ]
+  },
+  {
     id: 0,
     img: "https://firebasestorage.googleapis.com/v0/b/hari--portfolio.appspot.com/o/LGM.jpg?alt=media&token=2a9f4510-db50-4942-b1d7-adbe8044faa2",
     role: "Data Science Intern",
