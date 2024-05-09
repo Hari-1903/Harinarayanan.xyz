@@ -46,7 +46,7 @@ margin-top: 20px;
 export const Desc = styled.div`
     font-size: 18px;
     text-align: center;
-    max-width: 600px;
+    max-width: 700px;
     color: ${({ theme }) => theme.text_secondary};
     @media (max-width: 768px) {
         margin-top: 12px;
@@ -60,14 +60,4 @@ export const CardContainer = styled.div`
     align-items: center;
     gap: 28px;
     flex-wrap: wrap;
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // grid-gap: 32px;
-    // grid-auto-rows: minmax(100px, auto);
-    // @media (max-width: 960px) {
-    //     grid-template-columns: repeat(2, 1fr);
-    // }
-    // @media (max-width: 640px) {
-    //     grid-template-columns: repeat(1, 1fr);
-    // }
 `;

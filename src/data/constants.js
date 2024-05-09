@@ -3,7 +3,7 @@ export const Bio = {
   roles: [
     "Data Scientist",
     "Web Developer",
-    "CSE Engineer",
+    "Computer Engineer",
   ],
   description:"Welcome to my little corner of the internet! From everyday problem-solving to web development and machine learning, I love bringing ideas to life. Excited for tech impact!",
   github: "https://github.com/Hari-1903",
@@ -227,18 +227,19 @@ export const projects = [
   },
   {
     id: 0,
-    title: "Stock Market Prediction and Forecasting using Stacked LSTM",
-    description:"The objective of this project is to create a robust model using Recurrent Neural Networks (RNNs), with a particular emphasis on the Long-Short Term Memory (LSTM) architecture, to forecast future stock market values. This model will use historical data of the stock market to learn patterns and relationships and use this knowledge to make predictions for future stock market values.",
-    image:"https://firebasestorage.googleapis.com/v0/b/hari--portfolio.appspot.com/o/Stock%20Forecasting.png?alt=media&token=bde8996c-8ff4-4dc3-bbec-d8c8f8bf0798",
+    title: "Genetic Variation Classifier",
+    description:"A predictive model to differentiate variants with conflicting classifications from those with consistent classifications in Clinvar, which helps in accurate interpretation by clinicians and researchers.",
+    image:"https://firebasestorage.googleapis.com/v0/b/hari--portfolio.appspot.com/o/Genetic%20Variation%20Classification.png?alt=media&token=3d4f8864-b530-4339-aabc-a72018e1dfce",
     tags: 
     [
-      "Jupyter Notebook", 
-      "Tensorflow", 
-      "RNN", 
-      "LSTM"
+      "Data Analysis",
+      "Machine Learning",
+      "Random Forest", 
+      "Decision Tree"
     ],
-    github: "https://github.com/Hari-1903/DataScience_Internship-LGM",
-    webapp: "https://github.com/Hari-1903/DataScience_Internship-LGM/blob/main/Task_4/Task4.ipynb",
+    date: "April 2024",
+    github: "https://github.com/Hari-1903/Genetic-Variation-Classification",
+    webapp: "https://github.com/Hari-1903/Genetic-Variation-Classification/blob/main/Genetic%20Variant%20Classification%20.ipynb",
   },
 ];
 
